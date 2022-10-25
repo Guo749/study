@@ -1,2 +1,0 @@
-# study
-LeetCode practice
