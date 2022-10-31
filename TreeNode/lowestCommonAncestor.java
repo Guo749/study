@@ -3,7 +3,7 @@
  * @date 2022/10/24 16:07
  * @Description 二叉树的最近公共祖先-递归版
  */
-public class longestUnivaluePath {
+public class lowestCommonAncestor {
 
     //time: O(n)
     //space: O(n)
