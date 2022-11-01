@@ -1,7 +1,7 @@
 /**
  * @author nan
  * @date 2022/10/24 16:07
- * @Description 根据前序和后序遍历构造二叉树-迭代版
+ * @Description 根据前序和后序遍历构造二叉树-递归版
  */
 public class constructFromPrePost {
 
