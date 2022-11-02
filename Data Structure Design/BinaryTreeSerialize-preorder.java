@@ -5,8 +5,6 @@
  */
 public class BinaryTreeSerialize {
 
-    //time: O(n2)
-    //space: O(n)
     String SEP = ",";
     String NULL = "#";
     // Encodes a tree to a single string.
