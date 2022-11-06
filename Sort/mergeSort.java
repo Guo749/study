@@ -48,24 +48,17 @@ public class MergeSort {
         for (int i = start; i <= end; i++) {
             temp[i] = nums[i];
         }
-        System.out.println(Arrays.toString(temp));
-        int i = start, j = mid + 1, index = start;
-        while (i <= mid && j <= end) {
-            //if use < we will lost the stable of merge sort
-            if (temp[i] <= temp[j]) {
-                nums[index] = temp[i++];
-            } else {
-                nums[index] = temp[j++];
+        int i = start, j = mid + 1;
+        for(int k = start;k <= end; k++){
+            if(i == mid + 1){
+                nums[k] = nums[j++];
+            } else if(j == right + 1){
+                nums[k] = nums[i++];
+            } else if(temp[i] <= temp[j]){
+                nums[k] = nums[i++];
+            } else{
+                nums[k] = nums[j++];
             }
-            index++;
-        }
-
-        while(i <= mid){
-            nums[index++] = temp[i++];
-        }
-
-        while(j <= end){
-            nums[index++] = temp[j++];
         }
     }
 }
