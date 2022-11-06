@@ -5,6 +5,8 @@
  */
 public class interpret {
 
+    //time: O(n)
+    //space: O(1)
     public String interpret(String command) {
         StringBuilder stb = new StringBuilder();
         char[] chars = command.toCharArray();
